@@ -1,0 +1,64 @@
+.wrapper {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #04062d;
+  color: #fff;
+  padding: 2rem 0;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  min-height: 28rem;
+  display: flex;
+}
+.wrapper > .container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container {
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.result {
+  background-color: #181933;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.input-fields {
+}
+.input-field + .input-field {
+  margin: 2rem 0 0 0;
+}
+.input-fields input {
+  appearance: textfield;
+  border-style: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: inherit;
+  width: 100%;
+}
+.btn {
+  background-color: #181933;
+  color: inherit;
+  border: none;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media (min-width: 350px) {
+  .input-fields {
+    display: flex;
+    justify-content: space-between;
+  }
+  .input-field {
+    width: 45%;
+  }
+  .input-field + .input-field {
+    margin: 0;
+  }
+}
